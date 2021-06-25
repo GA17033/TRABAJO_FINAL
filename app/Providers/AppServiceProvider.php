@@ -3,6 +3,10 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+
+//agregue esta linea para que corra la migracion en la bd
+use Illuminate\Support\Facades\Schema;
+
 class AppServiceProvider extends ServiceProvider
 {
     /**
@@ -23,5 +27,10 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         //Paginator::useBootstrap();
+        
+        //modifique Index Lengths & MySQL / MariaDB
+        //Por defecto, Laravel usa utf8mb4
+        Schema::defaultStringLength(191);
+
     }
 }
