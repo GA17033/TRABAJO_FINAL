@@ -83,9 +83,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="hero-text">
-                        <h4>PAGINA <span>WEB</span></h4>
-					    <br><br>
-                        <h1 class="tipeo1">DESCRIPCIÓN:</h1>
+                      
                     </div>
                 </div>
             </div>
@@ -96,14 +94,14 @@
 <div class="container cartlist mt-3">
     <h3>Cart List</h3>
     <div class="row">
-        <div class="col-md-9">
-            <table class="table table-striped table-inverse table-responsive">
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered table-hover">
                 <thead class="">
                     <tr>
-                        <th>Amount</th>
-                        <th>Tax</th>
-                        <th>Delivery</th>
-                        <th>Total</th>
+                        <th>Subtotal</th>
+                        <th scope="col">Tax</th>
+                        <th scope="col">Delivery</th>
+                        <th scope="col">Total</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -118,11 +116,11 @@
             <form action="/orderplace" method="POST">
                 @csrf
                     <div class="form-group">
-                        <label for="address">Your Address</label>
+                        <label for="address">Direccion</label>
                         <textarea class="form-control" required name="address" id="" rows="3"></textarea>
                     </div>
                     <div class="form-group">
-                        <label for="payment"><b> Payment Method </b></label><br>
+                        <label for="payment"><b> Metodo de pago </b></label><br>
                         <div class="form-check">
                           <label class="form-check-label">
                                 <input type="checkbox" value="cash"  name="payment" id=""> <span>Online payment</span><br><br>
@@ -131,7 +129,7 @@
                             </label>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary mt-3 btn-sm">Order Now</button>
+                    <button type="submit" class="btn btn-primary mt-3 btn-sm">Ordenar Ahora</button>
             </form>
         </div>
     </div>

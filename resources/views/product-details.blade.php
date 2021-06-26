@@ -79,7 +79,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="hero-text">
-                        <h4>PAGINA <span>WEB</span></h4>
+                        <h4>TPI <span>2021</span></h4>
 					    <br><br>
                         <h1 class="tipeo1">DESCRIPCIÓN:</h1>
                     </div>
@@ -161,7 +161,7 @@
                 <ul class="box">
                     <li class="button_social">
                         <i class="fab mr-2 fa-facebook"></i>
-                        <a href="https://www.linkedin.com/in/jose-diaz-mira/" target="_blank">Facebook</a>
+                        <a href="" target="_blank">Facebook</a>
                     </li>
                     <li class="button_social">
                         <i class="fab mr-2 fa-twitter"></i>
@@ -169,11 +169,11 @@
                     </li>
                     <li class="button_social">
                         <i class="fab mr-2 fa-instagram"></i>
-                        <a href="https://www.linkedin.com/in/jose-diaz-mira/" target="_blank">Instagram</a>
+                        <a href="" target="_blank">Instagram</a>
                     </li>
                     <li class="button_social">
                         <i class="fab mr-2 fa-linkedin-in"></i>
-                        <a href="https://www.linkedin.com/in/jose-diaz-mira/" target="_blank">Linkedin</a>
+                        <a href="" target="_blank">Linkedin</a>
                     </li>
                 </ul>
             </li>
@@ -192,7 +192,7 @@
                 </li>
         </ul>
         <div class="b-footer">
-            <p>Todos los Derechos reservados by <a href="https://josediazmirano.github.io/jldiaz/" target="_blank">©JLDIAZ-2020</a></p>
+            <p>Todos los Derechos reservados by <a href="" target="_blank">©TPI-2021</a></p>
         </div>
 </footer>
 @endsection

@@ -83,9 +83,8 @@
             <div class="row">
                 <div class="col-12">
                     <div class="hero-text">
-                        <h4>PAGINA <span>WEB</span></h4>
-					    <br><br>
-                        <h1 class="tipeo1">DESCRIPCIÓN:</h1>
+                       
+                       
                     </div>
                 </div>
             </div>
@@ -94,30 +93,38 @@
 @endsection 
 @section('content')
 <div class="container cartlist mt-5">
+    <a href="/ordernow" class="btn btn-success">Ordenar Ahora</a>
+    @foreach ($productos as $item)
+ 
+        <div class="card mb-3" style="max-width: 540px;">
+
+            <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="{{asset('/img/productos/'.$item->image)}}" alt="" class="card-img-top">
+                    </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h3 class="card-title">Nombre: {{$item->name}}</h3><br><hr>
+                        <p class="card-text"><small class="text-muted">{{$item->name}}</small></p>
+                        <p class="card-text"><small class="text-muted">{{$item->descriptions}}</small></p>
+                       
+
+                       
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <a href="removecart/{{$item->cart_id}}" class="btn btn-warning">Eliminar</a>
+                </div>
+            </div> 
+               
+        </div>
+        @endforeach 
     
-    <a href="/ordernow" class="btn btn-success">Ordenar Ahora</a>
-    <div class="row justify-content-center align-items-center">    
-            @foreach ($productos as $item)
-            <div class="col-md-4">
-                <div class="card my-3 shadow">
-                    <a href="{{route('product-details', $item->id)}}">
-                        <img class="card-img-top" src="{{asset('/img/productos/'.$item->image)}}" alt="">
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card-body">
-                    <h4 class="card-title">{{$item->name}}</h4>
-                    <p class="card-text">{{$item->descriptions}}</p>
-                </div>
-            </div>
-            <div class="col-md-4 mb-3">
-                <a href="removecart/{{$item->cart_id}}" class="btn btn-warning">Eliminar</a>
-            </div>
-           @endforeach
-    </div>
-    <a href="/ordernow" class="btn btn-success">Ordenar Ahora</a>
+
+
+
 </div>
+
 @endsection
 
 

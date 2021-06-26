@@ -85,7 +85,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="hero-text">
-                        <h4>PAGINA <span>WEB</span></h4>
+                        <h4>TPI <span>2021</span></h4>
 						<br>
 						<br>
                         <h1 class="tipeo1">TPI</h1>
